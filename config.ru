@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'twitter'
 require 'sass/plugin/rack'
 require './config'
 require './app'
