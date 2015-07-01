@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Twitter User Interface</title>
+  <title><%= ENV['APP_NAME'] %></title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -9,40 +9,15 @@
 </head>
 <body>
 
-  <div class="icon-bar five-up">
+  <%= erb :"shared/nav" %>
 
-    <a class="item" href="/">
-      <i class="fa fa-home"></i>
-      <label>Home</label>
-    </a>
-
-    <a class="item" href="/mentions">
-      <i class="fa fa-quote-right"></i>
-      <label>Mentions</label>
-    </a>
-
-    <a class="item" href="/favourites">
-      <i class="fa fa-star"></i>
-      <label>Favourites</label>
-    </a>
-
-    <a class="item" href="/search">
-      <i class="fa fa-search"></i>
-      <label>Search</label>
-    </a>
-
-    <a class="item" href="/account">
-      <i class="fa fa-user"></i>
-      <label>Account</label>
-    </a>
-
-  </div>
-
-  <div class="content p">
+  <div class="p">
 
     <%= yield %>
 
   </div>
+
+  <%= erb :"shared/footer" %>
 
 </body>
 </html>
