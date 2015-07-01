@@ -23,7 +23,7 @@ get '/messages' do
 end
 
 get '/search' do
+  @tweets = TwitterClient.search(params[:q]) unless params[:q].nil?
 
-  # TODO
   erb :search
 end

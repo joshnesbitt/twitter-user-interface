@@ -1,3 +1,33 @@
 <h1>Search</h1>
 
-<p>Coming soon...</p>
+<form action='/search'>
+
+  <div class="row">
+    <div class="large-12 columns">
+
+      <div class="row collapse">
+
+        <div class="small-10 columns">
+          <input type="text" name="q" placeholder="Enter a search term...">
+        </div>
+
+        <div class="small-2 columns">
+          <button class="button postfix">Search</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</form>
+
+<% if @tweets.nil? %>
+
+  <p>Please enter a search term.</p>
+
+<% else %>
+
+  <%= erb(:"shared/tweets", locals: { tweets: @tweets }) %>
+
+<% end %>

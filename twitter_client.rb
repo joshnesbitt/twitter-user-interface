@@ -17,6 +17,10 @@ class TwitterClient
       client.direct_messages
     end
 
+    def search(q)
+      client.search(q)
+    end
+
   private
 
     def client
