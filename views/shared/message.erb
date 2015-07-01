@@ -1,0 +1,11 @@
+<div class="tweet mb">
+
+  <p><%= auto_link(message.text, username_include_symbol: true) %></p>
+
+  <div class="tweet__meta">
+
+    <p><%= format_date(message.created_at) %></p>
+
+  </div>
+
+</div>

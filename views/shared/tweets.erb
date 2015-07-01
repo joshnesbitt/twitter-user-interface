@@ -1,6 +1,4 @@
-<h1>Home</h1>
-
-<% @tweets.each do |tweet| %>
+<% tweets.each do |tweet| %>
 
   <%= erb(:"shared/tweet", locals: { tweet: tweet }) %>
 

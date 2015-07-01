@@ -5,6 +5,18 @@ class TwitterClient
       client.user_timeline
     end
 
+    def mentions
+      client.mentions_timeline
+    end
+
+    def favourites
+      client.favorites
+    end
+
+    def direct_messages
+      client.direct_messages
+    end
+
   private
 
     def client

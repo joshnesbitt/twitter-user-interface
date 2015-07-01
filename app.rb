@@ -1,5 +1,3 @@
-include Twitter::Autolink
-
 get '/' do
   @tweets = TwitterClient.timeline
 
@@ -7,17 +5,25 @@ get '/' do
 end
 
 get '/mentions' do
+  @tweets = TwitterClient.mentions
+
   erb :mentions
 end
 
 get '/favourites' do
+  @tweets = TwitterClient.favourites
+
   erb :favourites
 end
 
-get '/search' do
-  erb :search
+get '/messages' do
+  @messages = TwitterClient.direct_messages
+
+  erb :messages
 end
 
-get '/account' do
-  erb :account
+get '/search' do
+
+  # TODO
+  erb :search
 end

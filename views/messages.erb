@@ -1,0 +1,7 @@
+<h1>Direct Messages</h1>
+
+<% @messages.each do |message| %>
+
+  <%= erb(:"shared/message", locals: { message: message }) %>
+
+<% end %>
