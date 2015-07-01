@@ -1,0 +1,19 @@
+<div class="tweet mb">
+
+  <p><%= auto_link(tweet.text, username_include_symbol: true) %></p>
+
+  <div class="tweet__meta">
+
+    <p>
+      <i class="fa fa-star"></i>
+      <%= tweet.favorite_count %>
+
+      &nbsp;
+
+      <i class="fa fa-retweet"></i>
+      <%= tweet.retweet_count %>
+    </p>
+
+  </div>
+
+</div>

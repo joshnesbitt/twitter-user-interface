@@ -11,9 +11,29 @@ body {}
 .content {}
 
 //
+// Tweet
+//
+
+.tweet {
+  border-bottom: 1px #eee solid;
+}
+
+.tweet__meta {
+  color: #999;
+}
+
+//
 // Utility
 //
 
 .p {
   padding: 1em;
+}
+
+.m {
+  margin: 1em;
+}
+
+.mb {
+  margin-bottom: 1em;
 }

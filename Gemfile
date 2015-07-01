@@ -6,6 +6,7 @@ gem 'foreman'
 gem 'sinatra'
 gem 'sass'
 gem 'twitter'
+gem 'twitter-text'
 
 # Dev
 
