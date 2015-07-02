@@ -1,7 +1,8 @@
 .*
-!/.gitignore
 *.css
 vendor
 .bundle
 .sass-cache
 .env
+!/.gitignore
+!/.env.example
