@@ -1,3 +1,7 @@
-<h1>@<%= @username %></h1>
+<img src="<%= @user.profile_image_uri %>" class="float--left">
+
+<h1>@<%= @user.screen_name %></h1>
+
+<p><%= link_to(@user.website) %></p>
 
 <%= erb(:"shared/tweets", locals: { tweets: @tweets }) %>

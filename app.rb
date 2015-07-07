@@ -29,8 +29,8 @@ get '/search' do
 end
 
 get '/profile/:username' do
-  @username = params[:username]
-  @tweets = TwitterClient.timeline_for(@username)
+  @user = TwitterClient.user(params[:username])
+  @tweets = TwitterClient.timeline_for(params[:username])
 
   erb :profile
 end

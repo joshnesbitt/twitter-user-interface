@@ -5,14 +5,6 @@ class TwitterClient
       client.user_timeline
     end
 
-    def timeline_for(username)
-      client.user_timeline(username)
-    end
-
-    def hashtag(tag)
-      client.search("##{tag}")
-    end
-
     def mentions
       client.mentions_timeline
     end
@@ -27,6 +19,18 @@ class TwitterClient
 
     def search(q)
       client.search(q)
+    end
+
+    def timeline_for(username)
+      client.user_timeline(username)
+    end
+
+    def hashtag(tag)
+      client.search("##{tag}")
+    end
+
+    def user(username)
+      client.user(username)
     end
 
   private
