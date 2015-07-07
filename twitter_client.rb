@@ -5,6 +5,14 @@ class TwitterClient
       client.user_timeline
     end
 
+    def timeline_for(username)
+      client.user_timeline(username)
+    end
+
+    def hashtag(tag)
+      client.search("##{tag}")
+    end
+
     def mentions
       client.mentions_timeline
     end

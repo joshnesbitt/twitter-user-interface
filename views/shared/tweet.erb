@@ -1,6 +1,6 @@
 <div class="tweet mb">
 
-  <p><%= auto_link(tweet.text, username_include_symbol: true) %></p>
+  <p><%= auto_link(tweet.text, username_include_symbol: true, username_url_base: '/profile/', hashtag_url_base: '/hashtag/') %></p>
 
   <div class="tweet__meta">
 
