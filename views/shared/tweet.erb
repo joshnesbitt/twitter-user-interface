@@ -1,6 +1,12 @@
 <div class="tweet mb">
 
-  <p><%= render_tweet_content(tweet) %></p>
+  <div class="tweet__content">
+
+    <img src="<%= tweet.user.profile_image_uri %>" class="float--left mr">
+
+    <p><%= render_tweet_content(tweet) %></p>
+
+  </div>
 
   <div class="tweet__meta">
 

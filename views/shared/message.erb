@@ -1,10 +1,20 @@
 <div class="tweet mb">
 
-  <p><%= render_tweet_content(message) %></p>
+  <div class="tweet__content">
+
+    <img src="<%= message.sender.profile_image_uri %>" class="float--left mr">
+
+    <p><%= render_tweet_content(message) %></p>
+
+  </div>
 
   <div class="tweet__meta">
 
-    <p><%= format_date(message.created_at) %></p>
+    <p>
+
+      <%= format_date(message.created_at) %>
+
+    </p>
 
   </div>
 
