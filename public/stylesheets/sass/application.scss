@@ -1,46 +1,8 @@
 //
-// Generic
+// Application
 //
 
-body {}
-
-//
-// Content
-//
-
-.content {}
-
-//
-// Tweet
-//
-
-.tweet {
-  border-bottom: 1px #eee solid;
-}
-
-.tweet__meta {
-  color: #999;
-}
-
-//
-// Utility
-//
-
-.p {
-  padding: 1em;
-}
-
-.m {
-  margin: 1em;
-}
-
-.mb {
-  margin-bottom: 1em;
-}
-
-.mr {
-  margin-right: 1em;
-}
-
-.float--left { float: left; }
-.float--right { float: right; }
+@import 'content';
+@import 'profile_card';
+@import 'tweet';
+@import 'utility';
