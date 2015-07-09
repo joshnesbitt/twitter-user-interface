@@ -22,11 +22,7 @@
 
 </form>
 
-<% if @tweets.nil? %>
-
-  <p>Please enter a search term.</p>
-
-<% else %>
+<% unless @tweets.nil? %>
 
   <%= erb(:"shared/tweets", locals: { tweets: @tweets }) %>
 
