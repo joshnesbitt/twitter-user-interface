@@ -33,6 +33,10 @@ class TwitterClient
       client.user(username)
     end
 
+    def trends
+      client.trends
+    end
+
   private
 
     def client

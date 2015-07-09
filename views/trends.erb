@@ -1,0 +1,15 @@
+<h1>Trends</h1>
+
+<ul>
+
+  <% @trends.each do |trend| %>
+
+    <li>
+
+      <%= link_to(trend.name, "/search?q=#{trend.query}") %>
+
+    </li>
+
+  <% end %>
+
+</ul>

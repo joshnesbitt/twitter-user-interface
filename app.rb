@@ -41,3 +41,9 @@ get '/hashtag/:tag' do
 
   erb :hashtag
 end
+
+get '/trends' do
+  @trends = TwitterClient.trends
+
+  erb :trends
+end

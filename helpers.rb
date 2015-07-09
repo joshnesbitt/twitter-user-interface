@@ -5,7 +5,7 @@ def format_date(date)
 end
 
 def render_tweet_content(tweet)
-  auto_link(tweet.text,
+  auto_link(tweet.full_text,
     username_include_symbol: true,
     username_url_base: '/profile/',
     hashtag_url_base: '/hashtag/'
