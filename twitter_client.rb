@@ -18,7 +18,7 @@ class TwitterClient
     end
 
     def search(q)
-      client.search(q)
+      client.search(q, count: 25)
     end
 
     def timeline_for(username)
@@ -26,7 +26,7 @@ class TwitterClient
     end
 
     def hashtag(tag)
-      client.search("##{tag}")
+      search("##{tag}")
     end
 
     def user(username)
